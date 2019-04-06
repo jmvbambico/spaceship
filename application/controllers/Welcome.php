@@ -6,6 +6,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->template
 				 ->title('Squad')
+				 ->set_partial('styles', 'partials/styles')
+				 ->set_partial('navigation', 'partials/navigation')
+				 ->set_partial('footer', 'partials/footer')
+				 ->set_partial('scripts', 'partials/scripts')
 				 ->build('home');
 	}
 }
