@@ -27,3 +27,6 @@ If you don't prefer running this application over a Docker container, you may ru
 $ sudo apt-get install apache2 php mysql-server
 ```
 Launch the application: <http://localhost/spaceship/>
+
+Known issues:
+`PHP7 Mcrypt` - Mcrypt has been deprecated as of PHP 7.1 and officially dropped on 7.2. Since CodeIgniter still requires this dependecy, please install it manually using this [guide](https://stackoverflow.com/questions/34083470/php7-laravel-mcrypt-issue). This issue has been addressed on the Docker build however.
