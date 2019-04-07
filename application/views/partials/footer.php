@@ -10,7 +10,7 @@
           </a>
           </div>
         </div>
-        <p>&copy;SquadFREE. All rights reserved.</p>
+        <p>&copy;VT&amp;T. All rights reserved.</p>
         <div class="credits">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></div>
       </div>
     </div>

@@ -9,6 +9,7 @@
     <title><?php echo $template['title']; ?></title>
     <?php echo $template['partials']['styles']; ?>
     <?php echo $template['metadata']; ?>
+    <link href="<?php echo base_url(); ?>assets/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
     <div id="preloader">

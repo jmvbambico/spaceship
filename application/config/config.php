@@ -23,7 +23,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$protocol = is_https() ? 'https://' : 'http://';
+$host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : '';
+$root_folder = (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] !== '80') ? '' : '/spaceship/';
+
+if(is_cli())
+  $config['base_url'] = '';
+else if(stristr($host, 'localhost') !== FALSE || (stristr($host, '192.168.') !== FALSE) || (stristr($host, '127.0.0') !== FALSE))
+  $config['base_url'] = $protocol . $host . $root_folder;
+else{
+  $allowed_hosts = ['tld.com', 'www.tld.com'];
+  $config['base_url'] = in_array($host, $allowed_hosts) ? $protocol . $host . '/' : 'we-do-not-recognise-this-host.com';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +46,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
