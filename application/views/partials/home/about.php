@@ -27,7 +27,7 @@
             <div class="inner">
               <h5>Rey</h5>
               <p class="subtitle">Jedi Intern</p>
-              <div class="avatar"><img src="<?php base_url(); ?>assets/img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
+              <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/team/1.jpg" alt="" class="img-responsive img-circle" /></div>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
             <div class="inner">
               <h5>Padmé Amidala</h5>
               <p class="subtitle">Naboo Ambassador</p>
-              <div class="avatar"><img src="<?php base_url(); ?>assets/img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
+              <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/team/2.jpg" alt="" class="img-responsive img-circle" /></div>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
             <div class="inner">
               <h5>Han Solo</h5>
               <p class="subtitle">Hyperdrive Specialist</p>
-              <div class="avatar"><img src="<?php base_url(); ?>assets/img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
+              <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/team/3.jpg" alt="" class="img-responsive img-circle" /></div>
             </div>
           </div>
         </div>
@@ -60,7 +60,7 @@
             <div class="inner">
               <h5>Anakin Skywalker</h5>
               <p class="subtitle">Cloud Systems Engineer</p>
-              <div class="avatar"><img src="<?php base_url(); ?>assets/img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
+              <div class="avatar"><img src="<?php echo base_url(); ?>assets/img/team/4.jpg" alt="" class="img-responsive img-circle" /></div>
             </div>
           </div>
         </div>
