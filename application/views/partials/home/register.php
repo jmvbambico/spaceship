@@ -23,9 +23,9 @@
     <div class="row">
       <div class="col-lg-8">
         <div class="boxed-grey">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="sendmessage">Your enlistment application has been submitted for review!</div>
           <div id="errormessage"></div>
-          <form id="contact-form" action="" method="post" role="form" class="contactForm" enctype="multipart/form-data">
+          <form id="contact-form" action="<?php echo base_url(); ?>home/enlist" method="post" role="form" class="contactForm" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -50,8 +50,8 @@
                 <div class="form-group">
                   <label for="gender">Gender</label>
                   <select class="form-control" name="gender" id="gender" data-rule="required" data-msg="Please select your gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
                   </select>
                   <div class="validation"></div>
                 </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                   <label for="photo">Photo</label>
-                  <input type="file" name="photo" id="fileupload" data-rule="required" data-msg="Please enter your age" />
+                  <input type="file" name="photo" id="photo" />
                   <div class="validation"></div>
                 </div>
               </div>
@@ -91,10 +91,10 @@
           <address>
             <strong>We're on social networks</strong><br>
             <ul class="company-social">
-              <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-              <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+              <li class="social-facebook"><a href="https://www.facebook.com/docvadermd/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="social-twitter"><a href="https://twitter.com/docvadermd" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li class="social-dribble"><a href="https://dribbble.com/search?q=star+wars" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+              <li class="social-google"><a href="https://www.google.com/maps/@35.898186,-81.5481844,3a,75y,307.73h,90.35t/data=!3m7!1e1!3m5!1sqlcZPzXMS12y_CrDh64Qvw!2e0!3e2!7i13312!8i6656" target="_blank"><i class="fa fa-google-plus"></i></a></li>
             </ul>
           </address>
         </div>

@@ -25,11 +25,11 @@
         <div class="wow fadeInLeft" data-wow-delay="0.2s">
           <div class="service-box">
             <div class="service-icon">
-              <img src="<?php base_url(); ?>assets/img/icons/service-icon-1.png" alt="" />
+              <img src="<?php echo base_url(); ?>assets/img/icons/service-icon-1.png" alt="" />
             </div>
             <div class="service-desc">
               <h5>Processing</h5>
-              <p>We aim to provide you with light-speed fast processing to get you up and flying in no time.</p>
+              <p>We aim to provide you with light-speed processing time to get you up and flying to your destination in no time.</p>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
         <div class="wow fadeInUp" data-wow-delay="0.2s">
           <div class="service-box">
             <div class="service-icon">
-              <img src="<?php base_url(); ?>assets/img/icons/service-icon-2.png" alt="" />
+              <img src="<?php echo base_url(); ?>assets/img/icons/service-icon-2.png" alt="" />
             </div>
             <div class="service-desc">
               <h5>Scenery</h5>
@@ -51,7 +51,7 @@
         <div class="wow fadeInUp" data-wow-delay="0.2s">
           <div class="service-box">
             <div class="service-icon">
-              <img src="<?php base_url(); ?>assets/img/icons/service-icon-3.png" alt="" />
+              <img src="<?php echo base_url(); ?>assets/img/icons/service-icon-3.png" alt="" />
             </div>
             <div class="service-desc">
               <h5>Photography</h5>
@@ -64,7 +64,7 @@
         <div class="wow fadeInRight" data-wow-delay="0.2s">
           <div class="service-box">
             <div class="service-icon">
-              <img src="<?php base_url(); ?>assets/img/icons/service-icon-4.png" alt="" />
+              <img src="<?php echo base_url(); ?>assets/img/icons/service-icon-4.png" alt="" />
             </div>
             <div class="service-desc">
               <h5>Cloud System</h5>
